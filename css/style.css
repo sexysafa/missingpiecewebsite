@@ -1,38 +1,36 @@
-/*
-* Template Name: UntreeStore;
-* Template Author: Untree.co;
-* Author URI: https://untree.co/;
-* License: https://creativecommons.org/licenses/by/3.0/;
-*/
-@import url('https://fonts.cdnfonts.com/css/aileron');
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+@font-face {
+    font-family: 'aileron.thin';
+    src: url("../aileron.thin.otf");
+}
+
 body {
 overflow-x: hidden;
 position: relative; }
 
 body {
-font-family: 'Aileron', sans-serif;
-font-weight: 400;
+font-weight: 200;
 line-height: 28px;
-color: #6a6a6a;
-font-size: 14px;
-background-color: #ffffff; }
+color: #000000;
+font-size: 16px;
+background-color: #ffffff;
+font-family: 'aileron.thin'; }
 
 a {
 text-decoration: none;
 -webkit-transition: .3s all ease;
 -o-transition: .3s all ease;
 transition: .3s all ease;
-color: #2f2f2f;
+color: #000000;
 text-decoration: underline; }
 a:hover {
-color: #2f2f2f;
+color: #000000;
 text-decoration: none; }
 a.more {
 font-weight: 600; }
 
 .navbar-brand img {
-width: 200px;  /* Adjust this value as needed */;
+    transition: width 0.3s ease;
+width: 250px;  /* Adjust this value as needed */;
 }
 
 .custom-navbar {
@@ -62,7 +60,7 @@ margin-right: 15px; } }
 .custom-navbar .custom-navbar-nav li a {
 font-weight: 500;
 color: #000000 !important;
-opacity: .5;
+opacity: .9;
 -webkit-transition: .3s all ease;
 -o-transition: .3s all ease;
 transition: .3s all ease;
@@ -74,7 +72,7 @@ position: absolute;
 bottom: 0;
 left: 8px;
 right: 8px;
-background: #f9bf29;
+background: #000000;
 height: 5px;
 opacity: 1;
 visibility: visible;
@@ -95,25 +93,27 @@ margin-left: 0 !important;
 -webkit-box-orient: horizontal;
 -webkit-box-direction: normal;
 -ms-flex-direction: row;
-flex-direction: row; }
+flex-direction: row;
+opacity: 0.7; }
 @media (min-width: 768px) {
 .custom-navbar .custom-navbar-cta {
-margin-left: 40px !important; } }
+margin-left: 200px !important; } }
 .custom-navbar .custom-navbar-cta li {
 margin-left: 0px;
 margin-right: 0px; }
 .custom-navbar .custom-navbar-cta li:first-child {
 margin-right: 20px; }
 
+
 .hero {
-background: #333131;
+background: #000000;
 padding: calc(4rem - 30px) 0 0rem 0; }
 @media (min-width: 768px) {
 .hero {
 padding: calc(4rem - 30px) 0 4rem 0; } }
 @media (min-width: 992px) {
 .hero {
-padding: calc(8rem - 30px) 0 8rem 0; } }
+padding: calc(8rem - 30px) 0 1rem 0; } }
 .hero .intro-excerpt {
 position: relative;
 z-index: 4; }
@@ -121,14 +121,14 @@ z-index: 4; }
 .hero .intro-excerpt {
 max-width: 450px; } }
 .hero h1 {
-font-weight: 700;
+font-weight: 100;
 color: #ffffff;
 margin-bottom: 30px; }
 @media (min-width: 1400px) {
 .hero h1 {
 font-size: 54px; } }
 .hero p {
-color: rgba(255, 255, 255, 0.5);
+color: rgba(255, 255, 255, 0.945);
 margin-botom: 30px; }
 .hero .hero-img-wrap {
 position: relative; }
@@ -190,12 +190,13 @@ border-color: #3b5d50; }
 background: #314d43;
 border-color: #314d43; }
 .btn.btn-secondary {
-color: #2f2f2f;
-background: #f9bf29;
-border-color: #f9bf29; }
+color: #000000;
+background: #fffefc;
+border-color: #31312f; }
 .btn.btn-secondary:hover {
-background: #f8b810;
-border-color: #f8b810; }
+background: rgb(56, 53, 53);
+color: #ffffff;
+border-color: #20201f; }
 .btn.btn-white-outline {
 background: transparent;
 border-width: 2px;
@@ -263,7 +264,7 @@ left: 0;
 right: 0;
 position: absolute;
 content: "";
-background: #dce5e4;
+background: #dddddd;
 height: 0%;
 z-index: -1;
 border-radius: 10px;
@@ -309,7 +310,7 @@ content: "";
 width: 33px;
 height: 33px;
 position: absolute;
-background: rgba(59, 93, 80, 0.2);
+background: rgba(63, 68, 66, 0.2);
 border-radius: 50%;
 right: -8px;
 bottom: 0; }
@@ -384,7 +385,7 @@ content: "";
 width: 8px;
 height: 8px;
 border-radius: 50%;
-border: 2px solid #3b5d50;
+border: 2px solid #1c1d1c;
 position: absolute;
 left: 0;
 top: 8px; }
@@ -734,6 +735,7 @@ left: 0;
 .announcement-bar .carousel-control-next-icon {
 height: 50%;  /* Reduce the height to make the arrows smaller */;
 background-size: auto 50%; /* Adjust the background image to fit the new size */;
+opacity: 1;
 }
 
 
@@ -831,6 +833,7 @@ margin-right: auto;  /* Centering it within its container */;
 margin-left: auto;
 }
 }
+
 
 /* Making the navbar sticky */
 .custom-navbar {
@@ -984,8 +987,7 @@ background-color: #333; /* Add a dark-grey background on hover */;
     justify-content: flex-start; /* Aligning content to the start */
     flex-grow: 0; /* Preventing it from taking more space than needed */
 }
-
-/* Adding left margin to the shopping cart icon to move it further to the right */
-.custom-navbar .fa-shopping-cart {
-    margin-left: 100px;
+.custom-navbar .nav-link:hover {
+    border-bottom-color: black !important;  /* Override any border-bottom color */
+    text-decoration-color: black !important;  /* Override the text underline color */
 }
