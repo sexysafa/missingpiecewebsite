@@ -688,8 +688,8 @@ background-color: #000000;
 color: #ffffff;
 padding: 0.5px 0;
 font-size: 14px;
+font-weight: 500;
 height: 40px;
-font-family: 'Aileron', sans-serif; /* Set the font-family here */;
 }
 
 .announcement-bar p {
