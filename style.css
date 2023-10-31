@@ -961,31 +961,3 @@ background-color: #333; /* Add a dark-grey background on hover */;
         margin-left: 0;
     }
 }
-
-/* Ensuring the container takes full width and displays its children side by side */
-.custom-navbar .container {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start; /* Aligning content to the start */
-}
-
-/* Removing possible margins and paddings that might cause a gap */
-.custom-navbar .navbar-brand,
-.custom-navbar .navbar-nav {
-    margin: 0;
-    padding: 0;
-}
-
-/* Ensuring the navbar buttons take only the space they need */
-.custom-navbar .navbar-collapse {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start; /* Aligning content to the start */
-    flex-grow: 0; /* Preventing it from taking more space than needed */
-}
-
-/* Adding left margin to the shopping cart icon to move it further to the right */
-.custom-navbar .fa-shopping-cart {
-    margin-left: 100px;
-}
