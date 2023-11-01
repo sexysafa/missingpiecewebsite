@@ -953,21 +953,3 @@ background-color: #333; /* Add a dark-grey background on hover */;
     border-bottom-color: black !important;  /* Override any border-bottom color */
     text-decoration-color: black !important;  /* Override the text underline color */
 }
-.social-media-icons {
-    position: absolute;
-    top: 50%;
-    left: 10px;
-    transform: translateY(-50%);
-    display: flex;
-    gap: 10px;
-}
-
-.social-media-icons a {
-    color: #ffffff; /* Icon color */
-    font-size: 20px; /* Icon size */
-    transition: 0.3s;
-}
-
-.social-media-icons a:hover {
-    color: #ddd; /* Color on hover */
-}
